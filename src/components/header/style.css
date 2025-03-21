@@ -1,0 +1,168 @@
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	display: flex;
+	justify-content: space-between;
+
+	width: 100%;
+	height: 3.5rem;
+
+	z-index: 50;
+}
+
+.logoMenu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.logoMenu button {
+	height: 100%;
+	width: 3.2rem;
+	padding: 0.5rem;
+	border: 1px solid transparent;
+	background-color: transparent;
+}
+
+.menuImg {
+	filter: invert(0);
+}
+
+.logoContainer > span {
+	color: var(--text-color-light);
+}
+
+.header a {
+	display: inline-block;
+	padding: 0 1rem;
+	text-decoration: none;
+	line-height: 3.5rem;
+	color: var(--text-color-light);
+}
+
+.header nav {
+	display: none;
+}
+
+.logoContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	line-height: 3.5rem;
+}
+
+.logoContainer:hover {
+	background-color: transparent !important;
+}
+
+.logoContainer img {
+	margin-left: 1rem;
+	filter: invert(0);
+}
+
+.logoContainer > span {
+	display: none;
+}
+
+.header a:hover,
+.header a:active {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.header a.logo {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	gap: 1rem;
+	color: var(--text-color-light);
+}
+
+.logo span {
+	padding: 0 0.5rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 400;
+}
+
+@media (max-width: 639px) {
+
+}
+
+.header nav a.active {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+	.header a {
+		color: var(--text-color-dark) !important;
+	}
+
+	.logoContainer img {
+		filter: invert(1);
+	}
+
+	.menuImg {
+		filter: invert(1);
+	}
+
+	.logoContainer > span {
+		color: var(--text-color-dark);
+	}
+}
+
+[data-theme="light"] {
+	.header a {
+		color: var(--text-color-light) !important;
+	}
+
+	.logoContainer img {
+		filter: invert(0);
+	}
+
+	.menuImg {
+		filter: invert(0);
+	}
+
+	.logoContainer > span {
+		color: var(--text-color-light);
+	}
+}
+
+[data-theme="dark"] {
+	.header a {
+		color: var(--text-color-dark) !important;
+	}
+
+	.logoContainer img {
+		filter: invert(1);
+	}
+
+	.menuImg {
+		filter: invert(1);
+	}
+
+	.logoContainer > span {
+		color: var(--text-color-dark);
+	}
+}
+
+@media screen and (min-width: 815px) {
+	.header {
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.logoContainer > span {
+		display: block;
+	}
+
+	.header nav {
+		display: block;
+	}
+}

@@ -1,0 +1,215 @@
+.presentacion {
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	place-items: center;
+
+	background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
+}
+
+.contenedorSaludo {
+	width: calc(100% - 3rem);
+	height: calc(100% - 8rem);
+	min-height: 100%;
+	max-width: 900px;
+	
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+}
+
+.areaSaludo {
+	text-align: center;
+}
+
+.areaSaludo h1 {
+	font-size: 3rem;
+	margin: 0;
+}
+
+.saludoLinks {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.saludoLinks a {
+	text-decoration: none;
+	width: 7.5rem;
+	height: 2.5rem;
+	border-radius: 1.5rem;
+	border: 1px solid transparent;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+}
+
+.saludoLinks a:hover {
+	border-color: black;
+	box-shadow: 2px 2px 5px var(--color-shadow-light);
+	transition: .3s;
+}
+
+.saludoLogo {
+	display: grid;
+	place-items: center;
+}
+
+.saludoLogo > img {
+	width: calc(100% - 3rem);
+	max-height: 300px;
+	margin: auto;
+}
+
+.githubLink {
+	background-color: var(--color3-light);
+}
+
+.downloadLink {
+	background-color: var(--color3-op55-light);
+}
+
+@media (prefers-color-scheme: dark) {
+	.presentacion {
+		background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
+		color: var(--text-color-dark);
+	}
+
+	.githubLink {
+		background-color: var(--color3-dark);
+	}
+
+	.githubLink {
+		color: var(--text-color-dark);
+	}
+
+	.downloadLink {
+		background-color: var(--color3-op55-dark);
+	}
+
+	.downloadLink span {
+		color: var(--text-color-dark);
+	}
+
+	.saludoLinks a > img {
+		filter: invert(1);
+	}
+
+	.saludoLogo > img {
+		filter: invert(1);
+	}
+
+	.saludoLinks a:hover {
+		border-color: white;
+		box-shadow: 2px 2px 5px var(--color-shadow-dark);
+	}
+}
+
+/* Reglas para forzar el tema manual sin interferir cuando no hay override */
+[data-theme="light"] {
+	.presentacion {
+		background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
+		color: var(--text-color-light);
+	}
+
+	.githubLink {
+		background-color: var(--color3-light);
+	}
+
+	.githubLink span {
+		color: var(--text-color-light);
+	}
+
+	.downloadLink {
+		background-color: var(--color3-op55-light);
+	}
+
+	.downloadLink span {
+		color: var(--text-color-light);
+	}
+
+	.saludoLinks a > img {
+		filter: invert(0);
+	}
+
+	.saludoLogo > img {
+		filter: invert(0);
+	}
+
+	.saludoLinks a:hover {
+		border-color: black;
+		box-shadow: 2px 2px 5px var(--color-shadow-light);
+	}
+}
+
+[data-theme="dark"] {
+	.presentacion {
+		background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
+		color: var(--text-color-dark);
+	}
+
+	.githubLink {
+		background-color: var(--color3-dark);
+		color: var(--text-color-dark);
+	}
+
+	.githubLink span {
+		color: var(--text-color-dark);
+	}
+
+	.downloadLink {
+		background-color: var(--color3-op55-dark);
+		color: var(--text-color-dark);
+	}
+
+	.downloadLink span {
+		color: var(--text-color-dark);
+	}
+
+	.saludoLinks a > img {
+		filter: invert(1);
+	}
+
+	.saludoLogo > img {
+		filter: invert(1);
+	}
+
+	.saludoLinks a:hover {
+		border-color: white;
+		box-shadow: 2px 2px 5px var(--color-shadow-dark);
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.contenedorSaludo {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 25px;
+	}
+
+	.areaSaludo {
+		grid-row: -1/1;
+		grid-column: 1/2;
+		text-align: left;
+	}
+
+	.areaSaludo h1 {
+		font-size: 4rem;
+	}
+	
+	.saludoLinks {
+		justify-content: left;
+	}
+
+	.saludoLogo {
+		grid-column: 2/3;
+		grid-row: -1/1;
+	}
+}

@@ -1,10 +1,9 @@
-import { h } from 'preact';
 import style from './style.css';
 
 const Header = () => (
 	<header class={style.header}>
 		<div className={style.logoMenu}>
-			<button type="submit" className={style.menu} data-bs-toggle="offcanvas" data-bs-target="#nav-menu" aria-controls="nav-menu">
+			<button type="submit" className={style.menu} data-bs-toggle="offcanvas" data-bs-target="#nav_menu_offcanvas" aria-controls="nav_menu_offcanvas">
 				<img className={style.menuImg} src="../../assets/icons/fontawesome/solid/bars.svg" alt="menu" height={32} />
 			</button>
 			<div className={style.logoContainer}>

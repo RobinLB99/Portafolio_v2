@@ -1,12 +1,20 @@
+import {useEffect} from "preact/hooks";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './style.css'
 
 const OffCanvas = () => {
+
+    useEffect(() => {
+        import('bootstrap/dist/js/bootstrap.bundle.min.js');
+    }, []);
 
     return (
         <div className="offcanvas offcanvas-start" tabIndex="-1" id="nav-menu"
              aria-labelledby="offcanvasExampleLabel">
             <div className="offcanvas-header">
                 <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" />
             </div>
             <div className="offcanvas-body">
                 <div>

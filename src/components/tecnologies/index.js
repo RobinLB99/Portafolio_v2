@@ -10,8 +10,8 @@ const Tecnologies = () => {
                 {
                     tecnologias.map(tecnologia => {
                         return (
-                            <a target='_blank' href={tecnologia.link} id={Style.tecnologyCard}>
-                                <img src={tecnologia.icon} alt={tecnologia.name + "-icon"} height={25} />
+                            <a target='_blank' rel='noreferrer' href={tecnologia.link} id={Style.tecnologyCard} key={tecnologia.name}>
+                                <img src={tecnologia.icon} alt={tecnologia.name.concat("-icon")} height={25} />
                                 <span>{tecnologia.name}</span>
                             </a>
                         );

@@ -18,6 +18,7 @@ html, body {
 	--color2-light: #f4e6d7;
 	--color3-light: #fdfdfd;
 	--color3-op55-light: rgba(253, 253, 253, 0.55);
+	--color4-light: #e2f5f3;
 	--text-color-light: #191919;
 	--color-shadow-light: rgba(0, 0, 0, 0.3);
 
@@ -26,6 +27,7 @@ html, body {
 	--color2-dark: #232323;
 	--color3-dark: #191919;
 	--color3-op55-dark: rgba(25, 25, 25, 0.55);
+	--color4-dark: #0f0f0f;
 	--text-color-dark: #fdfdfd;
 	--color-shadow-dark: rgba(255, 255, 255, 0.471);
 

@@ -6,6 +6,7 @@ import Home from "./Home";
 import AboutMe from "./aboutme";
 import Tecnologies from "./tecnologies";
 import Offcanvas from "./offcanvas";
+import Projects from "./projects";
 
 const App = () => (
     <div id="app">
@@ -16,6 +17,7 @@ const App = () => (
             <Home path="/" />
             <AboutMe path="/AboutMe" />
             <Tecnologies path="/Tecnologies" />
+            <Projects path="/Projects" />
         </main>
     </div>
 );

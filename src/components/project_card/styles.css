@@ -1,0 +1,138 @@
+.projectCard {
+    max-width: 600px;
+    min-width: 350px;
+    width: 100%;
+    height: 550px;
+    background-color: var(--color3-light);
+    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    transition: .3s;
+}
+
+.projectCardImage {
+    height: 100%;
+}
+
+.projectCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projectCardContent {
+    width: 100%;
+    padding: 10px;
+}
+
+.projectCardContent h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.projectCardTecnologies > span {
+    background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
+    border-radius: 1.5rem;
+    padding: 5px 15px;
+}
+
+.projectCardButton {
+    padding: 10px 20px;
+    border-radius: 1.5rem;
+    background-color: var(--color4-light);
+    color: var(--text-color-light);
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: .3s;
+}
+
+.projectCardButton img {
+    width: 20px;
+    height: 20px;
+
+    filter: invert(0);
+}
+
+.projectCardButton:hover {
+    border: 1px solid black;
+}
+
+[data-theme="light"] {
+    .projectCard {
+        background-color: var(--color3-light);
+        color: var(--text-color-light);
+    }
+
+    .projectCardTecnologies > span {
+        background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
+    }
+    
+    .projectCardButton {
+        background-color: var(--color4-light);
+        color: var(--text-color-light);
+    }
+
+    .projectCardButton:hover {
+        border: 1px solid black;
+    }
+
+    .projectCardButton img {
+        filter: invert(0);
+    }
+}
+
+[data-theme="dark"] {
+    .projectCard {
+        background-color: var(--color3-dark);
+        color: var(--text-color-dark);
+    }
+
+    .projectCardTecnologies > span {
+        background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
+    }
+
+    .projectCardButton {
+        background-color: var(--color4-dark);
+        color: var(--text-color-dark);
+    }
+
+    .projectCardButton:hover {
+        border: 1px solid white;
+    }
+
+    .projectCardButton img {
+        filter: invert(1);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .projectCard {
+        background-color: var(--color3-dark);
+        color: var(--text-color-dark);
+    }
+
+    .projectCardTecnologies > span {
+        background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
+    }
+
+    .projectCardButton {
+        background-color: var(--color4-dark);
+        color: var(--text-color-dark);
+    }
+
+    .projectCardButton:hover {
+        border: 1px solid white;
+    }
+
+    .projectCardButton img {
+        filter: invert(1);
+    }
+}

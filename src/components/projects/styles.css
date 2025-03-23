@@ -1,0 +1,55 @@
+.projects {
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 0;
+    background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
+}
+
+.projectsContainer {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem .3rem 1rem;
+    overflow-x: scroll;
+
+    gap: 3rem;
+}
+
+.titleSeccion {
+    width: 100%;
+    text-align: center;
+
+    color: var(--text-color-light);
+ 
+}
+
+[data-theme="light"] {
+    .projects {
+        background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
+    }
+
+    .titleSeccion {
+        color: var(--text-color-light);
+    }
+}
+
+[data-theme="dark"] {
+    .projects {
+        background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
+    }
+
+    .titleSeccion {
+        color: var(--text-color-dark);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .projects {
+        background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
+    }
+
+    .titleSeccion {
+        color: var(--text-color-dark);
+    }
+}
+
+

@@ -136,3 +136,23 @@
         filter: invert(1);
     }
 }
+
+@media screen and (min-width: 800px) {
+    .projectCard {
+        max-width: 900px;
+        min-width: 700px;
+        width: 100%;
+        height: 300px;
+    
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        overflow: hidden;
+        transition: .3s;
+    }
+
+    .projectCardButtons {
+        justify-content: start !important;
+    }
+}

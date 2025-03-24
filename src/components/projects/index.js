@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <div className={Style.projects} id="my-projects">
             <h1 className={Style.titleSeccion}>Proyectos</h1>
-            <div className={`d-flex flex-row align-items-center ${Style.projectsContainer}`}>
+            <div className={`${Style.projectsContainer}`}>
                 {projects.map((project) => (
                     project.estado === 'Terminado' && (
                         <ProjectCard key={'project-'.concat(project.id)} project={project} />

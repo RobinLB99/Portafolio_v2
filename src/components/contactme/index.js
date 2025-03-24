@@ -2,7 +2,7 @@ import Style from "./styles.css";
 
 const ContactMe = () => {
     return (
-        <div className={Style.contactMe}>
+        <div className={Style.contactMe} id="contact">
             <h1>Contactarme</h1>
             <div className={Style.contactMeContainer}>
                 <a

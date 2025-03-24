@@ -21,7 +21,7 @@ const Header = () => (
 			<a activeClassName={style.active} href="#tecnologies">
 				Tecnologías
 			</a>
-			<a activeClassName={style.active} href="#projects">
+			<a activeClassName={style.active} href="#my-projects">
 				Proyectos
 			</a>
 			<a activeClassName={style.active} href="#contact">

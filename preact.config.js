@@ -1,11 +1,12 @@
 export default {
-  publicPath: '/portfolio-v2/',
-  prerender: {
-    enabled: true,
-    prerenderUrls: ['/'],
-  },
-  // eslint-disable-next-line no-unused-vars
-  webpack: (config, { dev, isServer }) => {
-    return config;
-  }
-}; 
+    publicPath: '/portfolio-v2/',
+    prerender: {
+        enabled: true
+    },
+    webpack: (config, { dev, isServer }) => {
+        config.plugins = config.plugins.filter(
+            plugin => plugin.constructor.name !== 'Critters'
+        );
+        return config;
+    }
+};

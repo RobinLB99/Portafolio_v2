@@ -8,7 +8,7 @@
 .projectsContainer {
     width: 100%;
     height: 100%;
-    padding: 1rem 1rem .3rem 1rem;
+    padding: 1.5rem 1rem;
     overflow-x: scroll;
 
     display: flex;
@@ -16,7 +16,24 @@
     align-items: center;
 
     gap: 3rem;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--color1-light) transparent;
 }
+
+.projectsContainer::-webkit-scrollbar {
+    height: 6px;
+}
+
+.projectsContainer::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.projectsContainer::-webkit-scrollbar-thumb {
+    background-color: var(--color1-light);
+    border-radius: 3px;
+}
+
 
 .titleSeccion {
     width: 100%;
@@ -44,6 +61,14 @@
     .titleSeccion {
         color: var(--text-color-dark);
     }
+
+    .projectsContainer {
+        scrollbar-color: var(--color1-dark) transparent;
+    }
+
+    .projectsContainer::-webkit-scrollbar-thumb {
+        background-color: var(--color1-dark);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,8 +79,13 @@
     .titleSeccion {
         color: var(--text-color-dark);
     }
+
+    .projectsContainer {
+        scrollbar-color: var(--color1-dark) transparent;
+    }
+    
+    .projectsContainer::-webkit-scrollbar-thumb {
+        background-color: var(--color1-dark);
+    }
 }
 
-@media screen and (min-width: 800px) {
-    
-}

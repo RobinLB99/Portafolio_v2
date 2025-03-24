@@ -1,12 +1,12 @@
-import { useEffect } from "preact/hooks";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+//import { useEffect } from "preact/hooks";
+//import "bootstrap/dist/css/bootstrap.min.css";
+//import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import styles from "./style.css";
 
 const OffCanvas = () => {
-    useEffect(() => {
-        import("bootstrap/dist/js/bootstrap.bundle.min.js");
-    }, []);
+    //useEffect(() => {
+    //    import("bootstrap/dist/js/bootstrap.bundle.min.js");
+    //}, []);
 
     return (
         <div

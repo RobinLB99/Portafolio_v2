@@ -11,38 +11,37 @@
     filter: invert(0) !important;
 }
 
-[data-theme="light"] {
-    .nav_menu_offcanvas {
-        color: var(--text-color-light);
-        background-color: var(--color3-light);
-    }
-
-    .nav_menu_offcanvas button > img {
-        filter: invert(0);
-    }
-
-    .img_link_offcanvas {
-        filter: invert(0) !important;
-    }
+/* Tema claro */
+[data-theme="light"] .nav_menu_offcanvas {
+    color: var(--text-color-light);
+    background-color: var(--color3-light);
 }
 
-[data-theme="dark"] {
-    .nav_menu_offcanvas {
-        color: var(--text-color-dark);
-        background-color: var(--color3-dark);
-    }
-
-    .nav_menu_offcanvas button > img {
-        filter: invert(1);
-    }
-
-    .img_link_offcanvas {
-        filter: invert(1) !important;
-    }
+[data-theme="light"] .nav_menu_offcanvas button > img {
+    filter: invert(0);
 }
 
+[data-theme="light"] .img_link_offcanvas {
+    filter: invert(0) !important;
+}
+
+/* Tema oscuro */
+[data-theme="dark"] .nav_menu_offcanvas {
+    color: var(--text-color-dark);
+    background-color: var(--color3-dark);
+}
+
+[data-theme="dark"] .nav_menu_offcanvas button > img {
+    filter: invert(1);
+}
+
+[data-theme="dark"] .img_link_offcanvas {
+    filter: invert(1) !important;
+}
+
+/* Media query para modo oscuro del sistema */
 @media (prefers-color-scheme: dark) {
-	.nav_menu_offcanvas {
+    .nav_menu_offcanvas {
         color: var(--text-color-dark);
         background-color: var(--color3-dark);
     }

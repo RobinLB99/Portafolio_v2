@@ -34,43 +34,39 @@
     border-radius: 3px;
 }
 
-
 .titleSeccion {
     width: 100%;
     text-align: center;
-
     color: var(--text-color-light);
- 
 }
 
-[data-theme="light"] {
-    .projects {
-        background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
-    }
-
-    .titleSeccion {
-        color: var(--text-color-light);
-    }
+/* Tema claro */
+[data-theme="light"] .projects {
+    background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
 }
 
-[data-theme="dark"] {
-    .projects {
-        background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
-    }
-
-    .titleSeccion {
-        color: var(--text-color-dark);
-    }
-
-    .projectsContainer {
-        scrollbar-color: var(--color1-dark) transparent;
-    }
-
-    .projectsContainer::-webkit-scrollbar-thumb {
-        background-color: var(--color1-dark);
-    }
+[data-theme="light"] .titleSeccion {
+    color: var(--text-color-light);
 }
 
+/* Tema oscuro */
+[data-theme="dark"] .projects {
+    background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
+}
+
+[data-theme="dark"] .titleSeccion {
+    color: var(--text-color-dark);
+}
+
+[data-theme="dark"] .projectsContainer {
+    scrollbar-color: var(--color1-dark) transparent;
+}
+
+[data-theme="dark"] .projectsContainer::-webkit-scrollbar-thumb {
+    background-color: var(--color1-dark);
+}
+
+/* Media query para modo oscuro del sistema */
 @media (prefers-color-scheme: dark) {
     .projects {
         background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
@@ -88,4 +84,3 @@
         background-color: var(--color1-dark);
     }
 }
-

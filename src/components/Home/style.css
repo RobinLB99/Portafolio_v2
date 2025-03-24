@@ -3,7 +3,6 @@
 	width: 100%;
 	display: grid;
 	place-items: center;
-
 	background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
 }
 
@@ -12,7 +11,6 @@
 	height: calc(100% - 8rem);
 	min-height: 100%;
 	max-width: 900px;
-	
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: center;
@@ -77,6 +75,7 @@
 	background-color: var(--color3-op55-light);
 }
 
+/* Media query para modo oscuro del sistema */
 @media (prefers-color-scheme: dark) {
 	.presentacion {
 		background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
@@ -85,9 +84,6 @@
 
 	.githubLink {
 		background-color: var(--color3-dark);
-	}
-
-	.githubLink {
 		color: var(--text-color-dark);
 	}
 
@@ -113,79 +109,76 @@
 	}
 }
 
-/* Reglas para forzar el tema manual sin interferir cuando no hay override */
-[data-theme="light"] {
-	.presentacion {
-		background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
-		color: var(--text-color-light);
-	}
-
-	.githubLink {
-		background-color: var(--color3-light);
-	}
-
-	.githubLink span {
-		color: var(--text-color-light);
-	}
-
-	.downloadLink {
-		background-color: var(--color3-op55-light);
-	}
-
-	.downloadLink span {
-		color: var(--text-color-light);
-	}
-
-	.saludoLinks a > img {
-		filter: invert(0);
-	}
-
-	.saludoLogo > img {
-		filter: invert(0);
-	}
-
-	.saludoLinks a:hover {
-		border-color: black;
-		box-shadow: 2px 2px 5px var(--color-shadow-light);
-	}
+/* Tema claro */
+[data-theme="light"] .presentacion {
+	background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
+	color: var(--text-color-light);
 }
 
-[data-theme="dark"] {
-	.presentacion {
-		background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
-		color: var(--text-color-dark);
-	}
+[data-theme="light"] .githubLink {
+	background-color: var(--color3-light);
+}
 
-	.githubLink {
-		background-color: var(--color3-dark);
-		color: var(--text-color-dark);
-	}
+[data-theme="light"] .githubLink span {
+	color: var(--text-color-light);
+}
 
-	.githubLink span {
-		color: var(--text-color-dark);
-	}
+[data-theme="light"] .downloadLink {
+	background-color: var(--color3-op55-light);
+}
 
-	.downloadLink {
-		background-color: var(--color3-op55-dark);
-		color: var(--text-color-dark);
-	}
+[data-theme="light"] .downloadLink span {
+	color: var(--text-color-light);
+}
 
-	.downloadLink span {
-		color: var(--text-color-dark);
-	}
+[data-theme="light"] .saludoLinks a > img {
+	filter: invert(0);
+}
 
-	.saludoLinks a > img {
-		filter: invert(1);
-	}
+[data-theme="light"] .saludoLogo > img {
+	filter: invert(0);
+}
 
-	.saludoLogo > img {
-		filter: invert(1);
-	}
+[data-theme="light"] .saludoLinks a:hover {
+	border-color: black;
+	box-shadow: 2px 2px 5px var(--color-shadow-light);
+}
 
-	.saludoLinks a:hover {
-		border-color: white;
-		box-shadow: 2px 2px 5px var(--color-shadow-dark);
-	}
+/* Tema oscuro */
+[data-theme="dark"] .presentacion {
+	background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
+	color: var(--text-color-dark);
+}
+
+[data-theme="dark"] .githubLink {
+	background-color: var(--color3-dark);
+	color: var(--text-color-dark);
+}
+
+[data-theme="dark"] .githubLink span {
+	color: var(--text-color-dark);
+}
+
+[data-theme="dark"] .downloadLink {
+	background-color: var(--color3-op55-dark);
+	color: var(--text-color-dark);
+}
+
+[data-theme="dark"] .downloadLink span {
+	color: var(--text-color-dark);
+}
+
+[data-theme="dark"] .saludoLinks a > img {
+	filter: invert(1);
+}
+
+[data-theme="dark"] .saludoLogo > img {
+	filter: invert(1);
+}
+
+[data-theme="dark"] .saludoLinks a:hover {
+	border-color: white;
+	box-shadow: 2px 2px 5px var(--color-shadow-dark);
 }
 
 @media screen and (min-width: 800px) {

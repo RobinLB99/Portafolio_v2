@@ -2,12 +2,9 @@
     width: 100%;
     height: 100vh;
     padding-top: 56px;
-
     display: grid;
     place-items: center;
-
     background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
-
     text-align: center;
     color: var(--text-color-light);
 }
@@ -22,7 +19,6 @@
 .informacion {
     margin: 0;
     width: calc(100% - 1.5rem);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,12 +40,9 @@
     padding: 0;
     display: grid;
     place-items: center;
-
     background-color: var(--color3-op55-light);
-
     border-top-right-radius: 5rem;
     border-bottom-left-radius: 5rem;
-
     overflow: hidden;
 }
 
@@ -58,8 +51,9 @@
     height: auto;
 }
 
+/* Media query para modo oscuro del sistema */
 @media (prefers-color-scheme: dark) {
-	.aboutme {
+    .aboutme {
         background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
         color: var(--text-color-dark);
     }
@@ -69,38 +63,35 @@
     }
 }
 
-/* Reglas para forzar el tema manual sin interferir cuando no hay override */
-[data-theme="light"] {
-	.aboutme {
-        background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
-        color: var(--text-color-light);
-    }
-
-    .foto {
-        background-color: var(--color3-op55-light);
-    }
+/* Tema claro */
+[data-theme="light"] .aboutme {
+    background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
+    color: var(--text-color-light);
 }
 
-[data-theme="dark"] {
-	.aboutme {
-        background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
-        color: var(--text-color-dark);
-    }
+[data-theme="light"] .foto {
+    background-color: var(--color3-op55-light);
+}
 
-    .foto {
-        background-color: var(--color3-op55-dark);
-    }
+/* Tema oscuro */
+[data-theme="dark"] .aboutme {
+    background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
+    color: var(--text-color-dark);
+}
+
+[data-theme="dark"] .foto {
+    background-color: var(--color3-op55-dark);
 }
 
 @media screen and (min-width: 800px) {
     .aboutme {
         text-align: left;
     }
+    
     .contenedor {
         display: grid;
         place-items: center;
         grid-template-columns: 1fr 1fr;
-
         max-width: 1024px;
     }
 

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -11,10 +10,8 @@
     left: 0;
     margin: 25px;
     z-index: 1;
-
     border: 1px solid transparent;
     background-color: var(--color3-dark);
-
     cursor: pointer;
     transition: .3s;
 }
@@ -29,6 +26,7 @@
     transition: .3s;
 }
 
+/* Media query para modo oscuro del sistema */
 @media (prefers-color-scheme: dark) {
     .button {
         background-color: var(--color3-light);
@@ -44,32 +42,30 @@
     }
 }
 
-[data-theme = "light"] {
-    .button {
-        background-color: var(--color3-dark);
-    }
-
-    .button img {
-        filter: invert(1);
-    }
-
-    .button:hover {
-        border-color: white;
-        box-shadow: 3px 3px 8px var(--color-shadow-light);
-    }
+/* Tema claro */
+[data-theme="light"] .button {
+    background-color: var(--color3-dark);
 }
 
-[data-theme = "dark"] {
-    .button {
-        background-color: var(--color3-light);
-    }
+[data-theme="light"] .button img {
+    filter: invert(1);
+}
 
-    .button img {
-        filter: invert(0);
-    }
+[data-theme="light"] .button:hover {
+    border-color: white;
+    box-shadow: 3px 3px 8px var(--color-shadow-light);
+}
 
-    .button:hover {
-        border-color: black;
-        box-shadow: 3px 3px 8px var(--color-shadow-dark);
-    }
+/* Tema oscuro */
+[data-theme="dark"] .button {
+    background-color: var(--color3-light);
+}
+
+[data-theme="dark"] .button img {
+    filter: invert(0);
+}
+
+[data-theme="dark"] .button:hover {
+    border-color: black;
+    box-shadow: 3px 3px 8px var(--color-shadow-dark);
 }

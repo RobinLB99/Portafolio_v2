@@ -17,6 +17,7 @@
 .header.scrolled {
 	background-color: var(--color3-op55-light);
 	box-shadow: 0 2px 10px var(--color-shadow-light);
+	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 }
 
@@ -99,6 +100,7 @@
 	background: rgba(0, 0, 0, 0.4);
 }
 
+/* Media query para modo oscuro del sistema */
 @media (prefers-color-scheme: dark) {
 	.header a {
 		color: var(--text-color-dark) !important;
@@ -122,52 +124,51 @@
 	}
 }
 
-[data-theme="light"] {
-	.header a {
-		color: var(--text-color-light) !important;
-	}
-
-	.logoContainer img {
-		filter: invert(0);
-	}
-
-	.menuImg {
-		filter: invert(0);
-	}
-
-	.logoContainer > span {
-		color: var(--text-color-light);
-	}
-
-	.header.scrolled {
-		background-color: var(--color3-op55-light);
-		box-shadow: 0 2px 10px var(--color-shadow-light);
-	}
+/* Tema claro */
+[data-theme="light"] .header a {
+	color: var(--text-color-light) !important;
 }
 
-[data-theme="dark"] {
-	.header a {
-		color: var(--text-color-dark) !important;
-	}
-
-	.logoContainer img {
-		filter: invert(1);
-	}
-
-	.menuImg {
-		filter: invert(1);
-	}
-
-	.logoContainer > span {
-		color: var(--text-color-dark);
-	}
-
-	.header.scrolled {
-		background-color: var(--color3-op55-dark);
-		box-shadow: 0 2px 10px var(--color-shadow-light);
-	}
+[data-theme="light"] .logoContainer img {
+	filter: invert(0);
 }
 
+[data-theme="light"] .menuImg {
+	filter: invert(0);
+}
+
+[data-theme="light"] .logoContainer > span {
+	color: var(--text-color-light);
+}
+
+[data-theme="light"] .header.scrolled {
+	background-color: var(--color3-op55-light);
+	box-shadow: 0 2px 10px var(--color-shadow-light);
+}
+
+/* Tema oscuro */
+[data-theme="dark"] .header a {
+	color: var(--text-color-dark) !important;
+}
+
+[data-theme="dark"] .logoContainer img {
+	filter: invert(1);
+}
+
+[data-theme="dark"] .menuImg {
+	filter: invert(1);
+}
+
+[data-theme="dark"] .logoContainer > span {
+	color: var(--text-color-dark);
+}
+
+[data-theme="dark"] .header.scrolled {
+	background-color: var(--color3-op55-dark);
+	box-shadow: 0 2px 10px var(--color-shadow-light);
+}
+
+/* Media queries para responsive */
 @media screen and (min-width: 800px) {
 	.menu {
 		display: none;

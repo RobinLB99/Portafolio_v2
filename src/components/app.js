@@ -7,6 +7,7 @@ import AboutMe from "./aboutme";
 import Tecnologies from "./tecnologies";
 import Offcanvas from "./offcanvas";
 import Projects from "./projects";
+import ContactMe from "./contactme";
 
 const App = () => (
     <div id="app">
@@ -18,6 +19,7 @@ const App = () => (
             <AboutMe path="/AboutMe" />
             <Tecnologies path="/Tecnologies" />
             <Projects path="/Projects" />
+            <ContactMe path="/ContactMe" />
         </main>
     </div>
 );

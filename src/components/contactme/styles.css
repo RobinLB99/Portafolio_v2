@@ -1,0 +1,126 @@
+.contactMe {
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 3.5rem;
+
+    background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
+    color: var(--text-color-light);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMe h1 {
+    width: 100%;
+    height: fit-content;
+
+    text-align: center;
+}
+
+.contactMeContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.contactMeContainer a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+
+    color: var(--text-color-light);
+
+    transition: .3s;
+}
+
+.contactMeContainer a img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.contactMeContainer a:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+[data-theme="light"] {
+    .contactMe {
+        background: linear-gradient(90deg, var(--color2-light), var(--color1-light));
+    }
+
+    .contactMe h1 {
+        color: var(--text-color-light);
+    }
+
+    .contactMeContainer a {
+        color: var(--text-color-light);
+    }
+
+    .contactMeContainer a img {
+        filter: invert(0);
+    }
+}
+
+[data-theme="dark"] {
+    .contactMe {
+        background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
+    }
+
+    .contactMe h1 {
+        color: var(--text-color-dark);
+    }
+
+    .contactMeContainer a {
+        color: var(--text-color-dark);
+    }
+
+    .contactMeContainer a img {
+        filter: invert(1);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .contactMe {
+        background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
+    }
+
+    .contactMe h1 {
+        color: var(--text-color-dark);
+    }
+
+    .contactMeContainer a {
+        color: var(--text-color-dark);
+    }
+
+    .contactMeContainer a img {
+        filter: invert(1);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .contactMe h1 {
+        text-align: left;
+        padding-left: 12rem;
+    }
+
+    .contactMe {
+        height: 50vh;
+    }
+
+    .contactMeContainer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

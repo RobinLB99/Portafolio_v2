@@ -8,6 +8,7 @@ import Tecnologies from "./tecnologies";
 import Offcanvas from "./offcanvas";
 import Projects from "./projects";
 import ContactMe from "./contactme";
+import Footer from "./footer";
 
 const App = () => (
     <div id="app">
@@ -21,6 +22,7 @@ const App = () => (
             <Projects path="/Projects" />
             <ContactMe path="/ContactMe" />
         </main>
+        <Footer />
     </div>
 );
 

@@ -1,7 +1,24 @@
 {
-  "ssr-bundle.css": "ssr-bundle.6f58e.css",
+  "ssr-bundle.css": "ssr-bundle.b299e.css",
   "ssr-bundle.js": "ssr-bundle.js",
-  "ssr-bundle.css.map": "ssr-bundle.6f58e.css.map",
+  "ssr-bundle.css.map": "ssr-bundle.b299e.css.map",
   "ssr-bundle.js.map": "ssr-bundle.js.map",
-  "TTNorms-Medium.woff": "f3e8de9ed80897182472980faa30476e.woff"
+  "mongo.webp": "0538886990cb9985b6992057ff7b6468.webp",
+  "preact.webp": "0879c255554de9f31ddef7cab7e0d22c.webp",
+  "portafolio-v1.webp": "223dc62957c789122b3ca21462123111.webp",
+  "javascript.webp": "46f7ed5b67e5ea895854ee8925953162.webp",
+  "tienda.webp": "4a9c892391e8e5271d0182a7639333c2.webp",
+  "spring.webp": "64c161730fa8a6d37c738950c787e57a.webp",
+  "sqlserver.webp": "77836e3a628c8ede449c9b567679fd94.webp",
+  "java.webp": "84182918f1e54fe33ef0c7af6ff886d6.webp",
+  "bootstrap.webp": "95601153d8e6b5ceb81affcceef65d2c.webp",
+  "FOTO.png": "a59941198f66f9804451fc70aa381841.png",
+  "robinlugo-logo.png": "ac2bd5679884a1b3384c6d492fe47a0d.png",
+  "portafolio-v2.webp": "b36d3a18f6074175eb978a7edaf12b08.webp",
+  "jakarta.webp": "c9ad4fd1f100715a00ea979a01f76dda.webp",
+  "libreria.webp": "d4634a687a46f32f08c1df8224d6a5ed.webp",
+  "springboot.webp": "d6226b9a5ad13ac74eeb077dc57a394e.webp",
+  "calculadora.webp": "e6e4fe4ef258908c45518496a66cece9.webp",
+  "TTNorms-Medium.woff": "f3e8de9ed80897182472980faa30476e.woff",
+  "mysql.webp": "f5014dd8e9aa67e47fd61f179ef7aa3a.webp"
 }

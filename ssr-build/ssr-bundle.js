@@ -78,7 +78,7 @@ module.exports =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "./";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -92,6 +92,8 @@ module.exports =
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(h) {/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("xVTo");
+/* harmony import */ var _assets_img_logo_robinlugo_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("sVqj");
+
 
 var Home = function Home() {
   return h("div", {
@@ -108,23 +110,19 @@ var Home = function Home() {
     target: "_blank",
     className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].githubLink,
     rel: "noreferrer"
-  }, h("img", {
-    src: "../../assets/icons/fontawesome/brands/github.svg",
-    alt: "github-logo",
-    height: 25
+  }, h("i", {
+    className: "fa-brands fa-github"
   }), h("span", null, "Github")), h("a", {
     href: "https://docs.google.com/document/d/1TykjHesgyH-2p8eJYwe0WRX-3WXGagCu/edit?usp=sharing&ouid=113282831848628091773&rtpof=true&sd=true",
     target: "_blank",
     className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].downloadLink,
     rel: "noreferrer"
-  }, h("img", {
-    src: "../../assets/icons/fontawesome/solid/file.svg",
-    alt: "github-logo",
-    height: 25
+  }, h("i", {
+    className: "fa-solid fa-file"
   }), h("span", null, "CV")))), h("div", {
     className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].saludoLogo
   }, h("img", {
-    src: "../../assets/img/logo/robinlugo-logo.png",
+    src: _assets_img_logo_robinlugo_logo_png__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"],
     alt: "robin-logo"
   }))));
 };
@@ -168,17 +166,15 @@ var ContactMe = function ContactMe() {
     className: "".concat(_styles_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].contactMeItem, " text-decoration-none"),
     target: "_blank",
     rel: "noreferrer"
-  }, h("img", {
-    src: "../../assets/icons/fontawesome/brands/linkedin.svg",
-    alt: "linkedin-logo"
+  }, h("i", {
+    className: "fa-brands fa-linkedin"
   }), h("span", null, "LinkedIn")), h("a", {
     href: "mailto:lugoboero1999@gmail.com",
     className: "".concat(_styles_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].contactMeItem, " text-decoration-none"),
     target: "_blank",
     rel: "noreferrer"
-  }, h("img", {
-    src: "../../assets/icons/fontawesome/solid/at.svg",
-    alt: "at-logo"
+  }, h("i", {
+    className: "fa-solid fa-at"
   }), h("span", null, "Correo Electr\xF3nico"))));
 };
 /* harmony default export */ __webpack_exports__["a"] = (ContactMe);
@@ -190,6 +186,14 @@ var ContactMe = function ContactMe() {
 /***/ (function(module, exports) {
 
 module.exports = require("preact");
+
+/***/ }),
+
+/***/ "KKVt":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "a59941198f66f9804451fc70aa381841.png");
 
 /***/ }),
 
@@ -458,46 +462,76 @@ var aboutme = __webpack_require__("ocrF");
 // CONCATENATED MODULE: ./components/tecnologies/style.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ var style = ({"tecnologies":"tecnologies__eaNAO","listTecnologies":"listTecnologies__4FMpM","tecnologyCard":"tecnologyCard__lsja3"});
+// CONCATENATED MODULE: ./assets/icons/java.webp
+/* harmony default export */ var java = (__webpack_require__.p + "84182918f1e54fe33ef0c7af6ff886d6.webp");
+// CONCATENATED MODULE: ./assets/icons/spring.webp
+/* harmony default export */ var spring = (__webpack_require__.p + "64c161730fa8a6d37c738950c787e57a.webp");
+// CONCATENATED MODULE: ./assets/icons/springboot.webp
+/* harmony default export */ var springboot = (__webpack_require__.p + "d6226b9a5ad13ac74eeb077dc57a394e.webp");
+// CONCATENATED MODULE: ./assets/icons/jakarta.webp
+/* harmony default export */ var jakarta = (__webpack_require__.p + "c9ad4fd1f100715a00ea979a01f76dda.webp");
+// CONCATENATED MODULE: ./assets/icons/javascript.webp
+/* harmony default export */ var javascript = (__webpack_require__.p + "46f7ed5b67e5ea895854ee8925953162.webp");
+// CONCATENATED MODULE: ./assets/icons/preact.webp
+/* harmony default export */ var preact = (__webpack_require__.p + "0879c255554de9f31ddef7cab7e0d22c.webp");
+// CONCATENATED MODULE: ./assets/icons/bootstrap.webp
+/* harmony default export */ var bootstrap = (__webpack_require__.p + "95601153d8e6b5ceb81affcceef65d2c.webp");
+// CONCATENATED MODULE: ./assets/icons/sqlserver.webp
+/* harmony default export */ var sqlserver = (__webpack_require__.p + "77836e3a628c8ede449c9b567679fd94.webp");
+// CONCATENATED MODULE: ./assets/icons/mysql.webp
+/* harmony default export */ var mysql = (__webpack_require__.p + "f5014dd8e9aa67e47fd61f179ef7aa3a.webp");
+// CONCATENATED MODULE: ./assets/icons/mongo.webp
+/* harmony default export */ var mongo = (__webpack_require__.p + "0538886990cb9985b6992057ff7b6468.webp");
 // CONCATENATED MODULE: ./assets/data/tecnologies.js
+
+
+
+
+
+
+
+
+
+
 var tecnologias = [{
   name: "Java",
-  icon: "../assets/icons/java.webp",
+  icon: java,
   link: "https://www.java.com/"
 }, {
   name: "Spring Framework",
-  icon: "../assets/icons/spring.webp",
+  icon: spring,
   link: "https://spring.io/"
 }, {
   name: "Spring Boot",
-  icon: "../assets/icons/springboot.webp",
+  icon: springboot,
   link: "https://spring.io/projects/spring-boot"
 }, {
   name: "Jakarta EE",
-  icon: "../assets/icons/jakarta.webp",
+  icon: jakarta,
   link: "https://jakarta.ee/"
 }, {
   name: "JavaScript",
-  icon: "../assets/icons/javascript.webp",
+  icon: javascript,
   link: "https://developer.mozilla.org/es/docs/Web/JavaScript"
 }, {
   name: "Preact",
-  icon: "../assets/icons/preact.webp",
+  icon: preact,
   link: "https://preactjs.com/"
 }, {
   name: "Bootstrap",
-  icon: "../assets/icons/bootstrap.webp",
+  icon: bootstrap,
   link: "https://getbootstrap.com/"
 }, {
   name: "SQL Server",
-  icon: "../assets/icons/sqlserver.webp",
+  icon: sqlserver,
   link: "https://www.microsoft.com/es-es/sql-server/sql-server-downloads"
 }, {
   name: "MySQL",
-  icon: "../assets/icons/mysql.webp",
+  icon: mysql,
   link: "https://www.mysql.com/"
 }, {
   name: "MongoDB",
-  icon: "../assets/icons/mongo.webp",
+  icon: mongo,
   link: "https://www.mongodb.com/"
 }];
 /* harmony default export */ var tecnologies = (tecnologias);
@@ -578,6 +612,23 @@ var app_App = function App() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+
+// CONCATENATED MODULE: ./assets/img/projects/portafolio-v2.webp
+/* harmony default export */ var portafolio_v2 = (__webpack_require__.p + "b36d3a18f6074175eb978a7edaf12b08.webp");
+// CONCATENATED MODULE: ./assets/img/projects/libreria.webp
+/* harmony default export */ var libreria = (__webpack_require__.p + "d4634a687a46f32f08c1df8224d6a5ed.webp");
+// CONCATENATED MODULE: ./assets/img/projects/tienda.webp
+/* harmony default export */ var tienda = (__webpack_require__.p + "4a9c892391e8e5271d0182a7639333c2.webp");
+// CONCATENATED MODULE: ./assets/img/projects/calculadora.webp
+/* harmony default export */ var calculadora = (__webpack_require__.p + "e6e4fe4ef258908c45518496a66cece9.webp");
+// CONCATENATED MODULE: ./assets/img/projects/portafolio-v1.webp
+/* harmony default export */ var portafolio_v1 = (__webpack_require__.p + "223dc62957c789122b3ca21462123111.webp");
+// CONCATENATED MODULE: ./assets/data/proyectos.js
+
+
+
+
+
 var projects = [{
   id: 7,
   title: 'ArchiveNest: Gestor Documental',
@@ -591,7 +642,7 @@ var projects = [{
   id: 6,
   title: 'Portafolio v2',
   description: 'Portafolio personal creado con Preact y Bootstrap.',
-  image: '../../assets/img/projects/portafolio-v2.webp',
+  image: portafolio_v2,
   tecnologies: ['Preact', 'Bootstrap'],
   url: null,
   github: 'https://github.com/robinlb99/Portafolio_v2/',
@@ -609,7 +660,7 @@ var projects = [{
   id: 4,
   title: 'Software de Gestión de Liberia',
   description: 'Software de gestión de librería con base de datos.',
-  image: '../../assets/img/projects/libreria.webp',
+  image: libreria,
   tecnologies: ['JavaEE', 'JSP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
   url: null,
   github: 'https://github.com/robinlb99/Tienda_de_libros/',
@@ -618,7 +669,7 @@ var projects = [{
   id: 3,
   title: 'Software de Gestión de Tienda',
   description: 'Software de gestión de tienda con base de datos.',
-  image: '../../assets/img/projects/tienda.webp',
+  image: tienda,
   tecnologies: ['Java', 'Java Swing', 'MySQL'],
   url: null,
   github: 'https://github.com/robinlb99/Tienda/',
@@ -627,7 +678,7 @@ var projects = [{
   id: 2,
   title: 'Portafolio v1',
   description: 'Primera version de mi Portafolio personal creado con HTML, CSS y JavaScript.',
-  image: '../../assets/img/projects/portafolio-v1.webp',
+  image: portafolio_v1,
   tecnologies: ['HTML', 'CSS', 'JavaScript'],
   url: 'https://robinlb99.github.io/Mi-portafolio/',
   github: 'https://github.com/robinlb99/Mi-portafolio/',
@@ -636,13 +687,13 @@ var projects = [{
   id: 1,
   title: 'Calculadora',
   description: 'Calculadora de operaciones matemáticas básicas.',
-  image: '../../assets/img/projects/calculadora.webp',
+  image: calculadora,
   tecnologies: ['HTML', 'CSS', 'JavaScript'],
   url: 'https://robinlb99.github.io/Calculadora/',
   github: 'https://github.com/robinlb99/Calculadora/',
   estado: 'Terminado'
 }];
-/* harmony default export */ __webpack_exports__["a"] = (projects);
+/* harmony default export */ var proyectos = __webpack_exports__["a"] = (projects);
 
 /***/ }),
 
@@ -651,7 +702,8 @@ var projects = [{
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(h) {/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ySiU");
-/* harmony import */ var preact_hooks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("QRet");
+/* harmony import */ var _assets_img_logo_robinlugo_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("sVqj");
+/* harmony import */ var preact_hooks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("QRet");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -660,12 +712,13 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
+
 var Header = function Header() {
-  var _useState = Object(preact_hooks__WEBPACK_IMPORTED_MODULE_1__[/* useState */ "b"])(false),
+  var _useState = Object(preact_hooks__WEBPACK_IMPORTED_MODULE_2__[/* useState */ "b"])(false),
     _useState2 = _slicedToArray(_useState, 2),
     isScrolled = _useState2[0],
     setIsScrolled = _useState2[1];
-  Object(preact_hooks__WEBPACK_IMPORTED_MODULE_1__[/* useEffect */ "a"])(function () {
+  Object(preact_hooks__WEBPACK_IMPORTED_MODULE_2__[/* useEffect */ "a"])(function () {
     var handleScroll = function handleScroll() {
       setIsScrolled(window.scrollY > 0);
     };
@@ -684,15 +737,12 @@ var Header = function Header() {
     "data-bs-toggle": "offcanvas",
     "data-bs-target": "#nav_menu_offcanvas",
     "aria-controls": "nav_menu_offcanvas"
-  }, h("img", {
-    className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].menuImg,
-    src: "../../assets/icons/fontawesome/solid/bars.svg",
-    alt: "menu",
-    height: 32
+  }, h("i", {
+    className: "fa-solid fa-bars"
   })), h("div", {
     className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].logoContainer
   }, h("img", {
-    src: "../../assets/img/logo/robinlugo-logo.png",
+    src: _assets_img_logo_robinlugo_logo_png__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"],
     alt: "robin-logo",
     height: "32"
   }), h("span", null, "Robin Joel Lugo Boero"))), h("nav", null, h("a", {
@@ -773,21 +823,19 @@ var ProjectCard = function ProjectCard(_ref) {
   })), h("div", {
     className: "d-flex gap-3 justify-content-center ".concat(_styles_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].projectCardButtons)
   }, project.url && h("a", {
-    className: "".concat(_styles_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].projectCardButton, " d-flex gap-2"),
+    className: "".concat(_styles_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].projectCardButton, " d-flex gap-2 align-items-center"),
     href: project.url,
     target: "_blank",
     rel: "noreferrer"
-  }, h("img", {
-    src: "../../assets/icons/fontawesome/solid/globe.svg",
-    alt: "globe-icon"
+  }, h("i", {
+    className: "fa-solid fa-globe"
   }), h("span", null, "Ver")), project.github && h("a", {
-    className: "".concat(_styles_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].projectCardButton, " d-flex gap-2"),
+    className: "".concat(_styles_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].projectCardButton, " d-flex gap-2 align-items-center"),
     href: project.github,
     target: "_blank",
     rel: "noreferrer"
-  }, h("img", {
-    src: "../../assets/icons/fontawesome/brands/github.svg",
-    alt: "github-icon"
+  }, h("i", {
+    className: "fa-brands fa-github"
   }), h("span", null, "GitHub")))));
 };
 /* harmony default export */ __webpack_exports__["a"] = (ProjectCard);
@@ -818,6 +866,8 @@ var ProjectCard = function ProjectCard(_ref) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(h) {/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("NF/t");
+/* harmony import */ var _assets_img_profile_FOTO_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KKVt");
+
 
 var AboutMe = function AboutMe() {
   return h("div", {
@@ -829,10 +879,10 @@ var AboutMe = function AboutMe() {
     className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].informacion
   }, h("h1", {
     className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].titleSeccion
-  }, "Sobre mi"), h("p", null, "Ingeniero de Sistemas en formaci\xF3n con titulaci\xF3n en Tecnolog\xEDa en Redes y Telecomunicaciones, y autodidacta con conocimientos en desarrollo de software y habilidades en la programaci\xF3n, aptitudes de administraci\xF3n de bases de datos y redes de telecomunicaciones. Experiencia en soporte t\xE9cnico, mantenimiento de infraestructura de TI y gesti\xF3n anal\xEDtica de redes. Habilidades en programaci\xF3n con Java y JavaScript y conocimientos en otros lenguajes, as\xED como habilidades en el manejo de bases de datos relacionales y no relacionales. Manejo de herramientas de control de versiones, adem\xE1s de administraci\xF3n de entornos Windows y Linux. Capacidad para la administraci\xF3n de servicios de red y mantenimiento de equipos inform\xE1ticos.")), h("div", {
+  }, "Sobre mi"), h("p", null, "Soy un desarrollador de software en formaci\xF3n, apasionado por crear soluciones innovadoras y eficientes. Mi enfoque se centra en transformar ideas en c\xF3digo funcional, utilizando mis habilidades en Java, JavaScript y bases de datos para desarrollar aplicaciones robustas y escalables. Mi compromiso con la calidad y mi constante b\xFAsqueda de aprendizaje. Si buscas un profesional proactivo y con ganas de aportar valor a tus proyectos, \xA1cont\xE1ctame! Estoy listo para trabajar contigo y convertir tus ideas en realidad.")), h("div", {
     className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].foto
   }, h("img", {
-    src: "../../assets/img/profile/FOTO.png",
+    src: _assets_img_profile_FOTO_png__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"],
     alt: "foto-perfil"
   }))));
 };
@@ -855,6 +905,14 @@ var Footer = function Footer() {
 };
 /* harmony default export */ __webpack_exports__["a"] = (Footer);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("HteQ")["h"]))
+
+/***/ }),
+
+/***/ "sVqj":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "ac2bd5679884a1b3384c6d492fe47a0d.png");
 
 /***/ }),
 
@@ -881,7 +939,7 @@ var Footer = function Footer() {
 
 "use strict";
 // extracted by mini-css-extract-plugin
-/* harmony default export */ __webpack_exports__["a"] = ({"header":"header__OVZyn","scrolled":"scrolled__QjBdW","logoMenu":"logoMenu__SIweH","menuImg":"menuImg__CUOdD","logoContainer":"logoContainer__ltY64","logo":"logo__jPF5-","active":"active__r+Z6z","menu":"menu__lHSdu"});
+/* harmony default export */ __webpack_exports__["a"] = ({"header":"header__OVZyn","scrolled":"scrolled__QjBdW","logoMenu":"logoMenu__SIweH","logoContainer":"logoContainer__ltY64","logo":"logo__jPF5-","active":"active__r+Z6z","menu":"menu__lHSdu"});
 
 /***/ }),
 
@@ -917,10 +975,8 @@ var ColorSchemeButton = function ColorSchemeButton() {
   return h("button", {
     className: _style_css__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"].button,
     onClick: toggleTheme
-  }, h("img", {
-    src: "../../assets/icons/fontawesome/solid/palette.svg",
-    alt: "pallet-icon",
-    width: 30
+  }, h("i", {
+    className: "fa-solid fa-palette"
   }));
 };
 /* harmony default export */ __webpack_exports__["a"] = (ColorSchemeButton);
@@ -959,11 +1015,12 @@ var OffCanvas = function OffCanvas() {
     type: "button",
     className: "btn",
     "data-bs-dismiss": "offcanvas",
-    "aria-label": "Close"
-  }, h("img", {
-    src: "../../assets/icons/fontawesome/solid/xmark.svg",
-    alt: "close-logo",
-    height: 20
+    "aria-label": "Close",
+    style: {
+      fontSize: "1.5rem"
+    }
+  }, h("i", {
+    className: "fa-solid fa-xmark"
   }))), h("div", {
     className: "offcanvas-body"
   }, h("ul", {
@@ -973,51 +1030,36 @@ var OffCanvas = function OffCanvas() {
   }, h("a", {
     href: "#saludo",
     className: "nav-link d-flex align-items-center gap-2"
-  }, h("img", {
-    className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].img_link_offcanvas,
-    src: "../../assets/icons/fontawesome/solid/house.svg",
-    alt: "home-logo",
-    height: 20
+  }, h("i", {
+    className: "fa-solid fa-house"
   }), h("span", null, "Inicio"))), h("li", {
     className: "nav-item"
   }, h("a", {
     href: "#aboutme",
     className: "nav-link d-flex align-items-center gap-2"
-  }, h("img", {
-    className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].img_link_offcanvas,
-    src: "../../assets/icons/fontawesome/solid/user.svg",
-    alt: "user-logo",
-    height: 20
+  }, h("i", {
+    className: "fa-solid fa-user"
   }), h("span", null, "Sobre mi"))), h("li", {
     className: "nav-item"
   }, h("a", {
     href: "#tecnologies",
     className: "nav-link d-flex align-items-center gap-2"
-  }, h("img", {
-    className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].img_link_offcanvas,
-    src: "../../assets/icons/fontawesome/solid/code.svg",
-    alt: "code-logo",
-    height: 20
+  }, h("i", {
+    className: "fa-solid fa-code"
   }), h("span", null, "Tecnolog\xEDas"))), h("li", {
     className: "nav-item"
   }, h("a", {
     href: "#my-projects",
     className: "nav-link d-flex align-items-center gap-2"
-  }, h("img", {
-    className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].img_link_offcanvas,
-    src: "../../assets/icons/fontawesome/solid/folder.svg",
-    alt: "folder-logo",
-    height: 20
+  }, h("i", {
+    className: "fa-solid fa-folder"
   }), h("span", null, "Proyectos"))), h("li", {
     className: "nav-item"
   }, h("a", {
     href: "#contact",
     className: "nav-link d-flex align-items-center gap-2"
-  }, h("img", {
-    className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].img_link_offcanvas,
-    src: "../../assets/icons/fontawesome/solid/envelope.svg",
-    alt: "envelope-logo",
-    height: 20
+  }, h("i", {
+    className: "fa-solid fa-envelope"
   }), h("span", null, "Contactame"))))));
 };
 /* harmony default export */ __webpack_exports__["a"] = (OffCanvas);

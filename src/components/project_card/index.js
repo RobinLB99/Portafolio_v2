@@ -17,29 +17,31 @@ const ProjectCard = ({ project }) => {
                 <div className={`d-flex gap-3 justify-content-center ${Style.projectCardButtons}`}>
                     {project.url && (
                         <a
-                            className={`${Style.projectCardButton} d-flex gap-2`}
+                            className={`${Style.projectCardButton} d-flex gap-2 align-items-center`}
                             href={project.url}
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <img
+                            {/* <img
                                 src="../../assets/icons/fontawesome/solid/globe.svg"
                                 alt={`globe-icon`}
-                            />
+                            /> */}
+                            <i className="fa-solid fa-globe" />
                             <span>Ver</span>
                         </a>
                     )}
                     {project.github && (
                         <a
-                            className={`${Style.projectCardButton} d-flex gap-2`}
+                            className={`${Style.projectCardButton} d-flex gap-2 align-items-center`}
                             href={project.github}
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <img
+                            {/* <img
                                 src="../../assets/icons/fontawesome/brands/github.svg"
                                 alt={`github-icon`}
-                            />
+                            /> */}
+                            <i className="fa-brands fa-github" />
                             <span>GitHub</span>
                         </a>
                     )}

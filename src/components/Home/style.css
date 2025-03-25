@@ -50,6 +50,10 @@
 	transition: .3s;
 }
 
+.saludoLinks a i {
+	font-size: 1.3rem;
+}
+
 .saludoLinks a:hover {
 	border-color: black;
 	box-shadow: 2px 2px 5px var(--color-shadow-light);
@@ -95,9 +99,13 @@
 		color: var(--text-color-dark);
 	}
 
-	.saludoLinks a > img {
-		filter: invert(1);
+	.saludoLinks a {
+		color: var(--text-color-dark);
 	}
+
+	/* .saludoLinks a > i {
+		filter: invert(1);
+	} */
 
 	.saludoLogo > img {
 		filter: invert(1);
@@ -131,8 +139,8 @@
 	color: var(--text-color-light);
 }
 
-[data-theme="light"] .saludoLinks a > img {
-	filter: invert(0);
+[data-theme="light"] .saludoLinks a {
+	color: var(--text-color-light);
 }
 
 [data-theme="light"] .saludoLogo > img {
@@ -168,8 +176,8 @@
 	color: var(--text-color-dark);
 }
 
-[data-theme="dark"] .saludoLinks a > img {
-	filter: invert(1);
+[data-theme="dark"] .saludoLinks a {
+	color: var(--text-color-dark);
 }
 
 [data-theme="dark"] .saludoLogo > img {

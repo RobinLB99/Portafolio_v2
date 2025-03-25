@@ -1,4 +1,5 @@
 import Style from "./style.css";
+import foto from "../../assets/img/profile/FOTO.png";
 
 const AboutMe = () => {
     return (
@@ -14,7 +15,7 @@ const AboutMe = () => {
                 </div>
                 <div className={Style.foto}>
                     <img
-                        src="../../assets/img/profile/FOTO.png"
+                        src={foto}
                         alt="foto-perfil"
                     />
                 </div>

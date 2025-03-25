@@ -20,7 +20,7 @@ const ColorSchemeButton = () => {
 
     return (
         <button className={ColorScheme.button} onClick={toggleTheme}>
-            <img src="../../assets/icons/fontawesome/solid/palette.svg" alt="pallet-icon" width={30}  />
+            <i className="fa-solid fa-palette" />
         </button>
     );
 }

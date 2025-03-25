@@ -1,77 +1,79 @@
 @font-face {
-	font-family: 'TT Norms Medium';
-	font-style: normal;
-	font-weight: normal;
-	src: local('TT Norms Medium'), url('../assets/fonts/woff/TTNorms-Medium.woff') format('woff');
+    font-family: "TT Norms Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local("TT Norms Medium"),
+        url("../assets/fonts/woff/TTNorms-Medium.woff") format("woff");
 }
 
 :root {
-	/*Colores dia*/
-	--color1-light: #64e1dc;
-	--color2-light: #f4e6d7;
-	--color3-light: #fdfdfd;
-	--color3-op55-light: rgba(253, 253, 253, 0.55);
-	--color4-light: #e2f5f3;
-	--text-color-light: #191919;
-	--color-shadow-light: rgba(0, 0, 0, 0.3);
+    /*Colores dia*/
+    --color1-light: #64e1dc;
+    --color2-light: #f4e6d7;
+    --color3-light: #fdfdfd;
+    --color3-op55-light: rgba(253, 253, 253, 0.55);
+    --color4-light: #e2f5f3;
+    --text-color-light: #191919;
+    --color-shadow-light: rgba(0, 0, 0, 0.3);
 
-	/*Colores Noche*/
-	--color1-dark: #364468;
-	--color2-dark: #232323;
-	--color3-dark: #191919;
-	--color3-op55-dark: rgba(25, 25, 25, 0.55);
-	--color4-dark: #0f0f0f;
-	--text-color-dark: #fdfdfd;
-	--color-shadow-dark: rgba(255, 255, 255, 0.471);
+    /*Colores Noche*/
+    --color1-dark: #364468;
+    --color2-dark: #232323;
+    --color3-dark: #191919;
+    --color3-op55-dark: rgba(25, 25, 25, 0.55);
+    --color4-dark: #0f0f0f;
+    --text-color-dark: #fdfdfd;
+    --color-shadow-dark: rgba(255, 255, 255, 0.471);
 
-	color-scheme: light dark;
-	color: var(--text-color-light);
+    color-scheme: light dark;
+    color: var(--text-color-light);
 }
 
-html, body {
-	font-family: 'TT Norms Medium', 'Helvetica Neue', arial, sans-serif !important;
-	font-weight: 400 !important;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+html,
+body {
+    font-family: "TT Norms Medium", "Helvetica Neue", arial, sans-serif !important;
+    font-weight: 400 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		color: var(--text-color-dark);
-	}
+    :root {
+        color: var(--text-color-dark);
+    }
 }
 
 [data-theme="light"] :root {
-	color: var(--text-color-light);
+    color: var(--text-color-light);
 }
 
 [data-theme="dark"] :root {
-	color: var(--text-color-dark);
+    color: var(--text-color-dark);
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
 #app > main {
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	min-height: calc(100vh - 3.5rem);
-	height: 100%;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: calc(100vh - 3.5rem);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 639px) {
-	#app > main {
-		margin: 0;
-	}
+    #app > main {
+        margin: 0;
+    }
 }

@@ -1,5 +1,5 @@
 import style from "./style.css";
-
+import logo from "../../assets/img/logo/robinlugo-logo.png";
 const Home = () => {
     return (
         <div className={style.presentacion} id="saludo">
@@ -16,11 +16,12 @@ const Home = () => {
                             className={style.githubLink}
                             rel="noreferrer"
                         >
-                            <img
+                            {/* <img
                                 src="../../assets/icons/fontawesome/brands/github.svg"
                                 alt="github-logo"
                                 height={25}
-                            />
+                            /> */}
+                            <i className="fa-brands fa-github" />
                             <span>Github</span>
                         </a>
                         <a
@@ -29,18 +30,19 @@ const Home = () => {
                             className={style.downloadLink}
                             rel="noreferrer"
                         >
-                            <img
+                            {/* <img
                                 src="../../assets/icons/fontawesome/solid/file.svg"
                                 alt="github-logo"
                                 height={25}
-                            />
+                            /> */}
+                            <i className="fa-solid fa-file" />
                             <span>CV</span>
                         </a>
                     </div>
                 </div>
                 <div className={style.saludoLogo}>
                     <img
-                        src="../../assets/img/logo/robinlugo-logo.png"
+                        src={logo}
                         alt="robin-logo"
                     />
                 </div>

@@ -1,4 +1,5 @@
 import style from './style.css';
+import robinLogo from '../../assets/img/logo/robinlugo-logo.png';
 import { useEffect, useState } from 'preact/hooks';
 
 const Header = () => {
@@ -20,7 +21,7 @@ const Header = () => {
 					<img className={style.menuImg} src="../../assets/icons/fontawesome/solid/bars.svg" alt="menu" height={32} />
 				</button>
 				<div className={style.logoContainer}>
-					<img src="../../assets/img/logo/robinlugo-logo.png" alt="robin-logo" height="32" />
+					<img src={robinLogo} alt="robin-logo" height="32" />
 					<span>Robin Joel Lugo Boero</span>
 				</div>
 			</div>

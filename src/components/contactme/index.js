@@ -11,10 +11,11 @@ const ContactMe = () => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <img
+                    {/* <img
                         src="../../assets/icons/fontawesome/brands/linkedin.svg"
                         alt="linkedin-logo"
-                    />
+                    /> */}
+                    <i className="fa-brands fa-linkedin" />
                     <span>LinkedIn</span>
                 </a>
                 <a
@@ -23,10 +24,11 @@ const ContactMe = () => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <img
+                    {/* <img
                         src="../../assets/icons/fontawesome/solid/at.svg"
                         alt="at-logo"
-                    />
+                    /> */}
+                    <i className="fa-solid fa-at" />
                     <span>Correo Electrónico</span>
                 </a>
             </div>

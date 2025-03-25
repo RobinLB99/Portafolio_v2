@@ -36,9 +36,8 @@
     transition: .3s;
 }
 
-.contactMeContainer a img {
-    width: 3rem;
-    height: 3rem;
+.contactMeContainer a i {
+    font-size: 2.5rem;
 }
 
 .contactMeContainer a:hover {
@@ -59,10 +58,6 @@
     color: var(--text-color-light);
 }
 
-[data-theme="light"] .contactMeContainer a img {
-    filter: invert(0);
-}
-
 /* Tema oscuro */
 [data-theme="dark"] .contactMe {
     background: linear-gradient(90deg, var(--color1-dark), var(--color2-dark));
@@ -74,10 +69,6 @@
 
 [data-theme="dark"] .contactMeContainer a {
     color: var(--text-color-dark);
-}
-
-[data-theme="dark"] .contactMeContainer a img {
-    filter: invert(1);
 }
 
 /* Media query para modo oscuro del sistema */
@@ -92,10 +83,6 @@
 
     .contactMeContainer a {
         color: var(--text-color-dark);
-    }
-
-    .contactMeContainer a img {
-        filter: invert(1);
     }
 }
 

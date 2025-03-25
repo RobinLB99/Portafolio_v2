@@ -748,10 +748,10 @@ var Header = function Header() {
   }), h("span", null, "Robin Joel Lugo Boero"))), h("nav", null, h("a", {
     activeClassName: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].active,
     href: "#saludo"
-  }, "Home"), h("a", {
+  }, "Inicio"), h("a", {
     activeClassName: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].active,
     href: "#aboutme"
-  }, "Acerca de mi"), h("a", {
+  }, "Sobre mi"), h("a", {
     activeClassName: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].active,
     href: "#tecnologies"
   }, "Tecnolog\xEDas"), h("a", {
@@ -760,7 +760,7 @@ var Header = function Header() {
   }, "Proyectos"), h("a", {
     activeClassName: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].active,
     href: "#contact"
-  }, "Contactame")));
+  }, "Contactarme")));
 };
 /* harmony default export */ __webpack_exports__["a"] = (Header);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("HteQ")["h"]))
@@ -1060,7 +1060,7 @@ var OffCanvas = function OffCanvas() {
     className: "nav-link d-flex align-items-center gap-2"
   }, h("i", {
     className: "fa-solid fa-envelope"
-  }), h("span", null, "Contactame"))))));
+  }), h("span", null, "Contactarme"))))));
 };
 /* harmony default export */ __webpack_exports__["a"] = (OffCanvas);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("HteQ")["h"]))

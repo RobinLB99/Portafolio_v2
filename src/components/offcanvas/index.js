@@ -65,7 +65,7 @@ const OffCanvas = () => {
                         <a href="#contact" className="nav-link d-flex align-items-center gap-2">
                             {/* <img className={styles.img_link_offcanvas} src="../../assets/icons/fontawesome/solid/envelope.svg" alt="envelope-logo" height={20} /> */}
                             <i className="fa-solid fa-envelope" />
-                            <span>Contactame</span>
+                            <span>Contactarme</span>
                         </a>
                     </li>
                 </ul>

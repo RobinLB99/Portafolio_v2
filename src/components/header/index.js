@@ -28,10 +28,10 @@ const Header = () => {
 			</div>
 			<nav>
 				<a activeClassName={style.active} href="#saludo">
-					Home
+					Inicio
 				</a>
 				<a activeClassName={style.active} href="#aboutme">
-					Acerca de mi
+					Sobre mi
 				</a>
 				<a activeClassName={style.active} href="#tecnologies">
 					Tecnologías
@@ -40,7 +40,7 @@ const Header = () => {
 					Proyectos
 				</a>
 				<a activeClassName={style.active} href="#contact">
-					Contactame
+					Contactarme
 				</a>
 			</nav>
 		</header>

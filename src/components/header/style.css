@@ -33,10 +33,8 @@
 	padding: 0.5rem;
 	border: 1px solid transparent;
 	background-color: transparent;
-}
-
-.menuImg {
-	filter: invert(0);
+	color: var(--text-color-light);
+	font-size: 1.5rem;
 }
 
 .logoContainer > span {
@@ -110,8 +108,8 @@
 		filter: invert(1);
 	}
 
-	.menuImg {
-		filter: invert(1);
+	.logoMenu button {
+		color: var(--text-color-dark);
 	}
 
 	.logoContainer > span {
@@ -133,8 +131,8 @@
 	filter: invert(0);
 }
 
-[data-theme="light"] .menuImg {
-	filter: invert(0);
+[data-theme="light"] .logoMenu button {
+	color: var(--text-color-light);
 }
 
 [data-theme="light"] .logoContainer > span {
@@ -155,8 +153,8 @@
 	filter: invert(1);
 }
 
-[data-theme="dark"] .menuImg {
-	filter: invert(1);
+[data-theme="dark"] .logoMenu button {
+	color: var(--text-color-dark);
 }
 
 [data-theme="dark"] .logoContainer > span {

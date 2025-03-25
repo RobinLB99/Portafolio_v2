@@ -3,8 +3,8 @@
     background-color: var(--color3-light);
 }
 
-.nav_menu_offcanvas button > img {
-    filter: invert(0);
+.nav_menu_offcanvas button {
+    color: var(--text-color-light);
 }
 
 .img_link_offcanvas {
@@ -17,8 +17,8 @@
     background-color: var(--color3-light);
 }
 
-[data-theme="light"] .nav_menu_offcanvas button > img {
-    filter: invert(0);
+[data-theme="light"] .nav_menu_offcanvas button {
+    color: var(--text-color-light);
 }
 
 [data-theme="light"] .img_link_offcanvas {
@@ -31,8 +31,8 @@
     background-color: var(--color3-dark);
 }
 
-[data-theme="dark"] .nav_menu_offcanvas button > img {
-    filter: invert(1);
+[data-theme="dark"] .nav_menu_offcanvas button {
+    color: var(--text-color-dark);
 }
 
 [data-theme="dark"] .img_link_offcanvas {

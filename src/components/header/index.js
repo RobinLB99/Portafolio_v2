@@ -18,7 +18,8 @@ const Header = () => {
 		<header className={`${style.header} ${isScrolled ? style.scrolled : ''}`}>
 			<div className={style.logoMenu}>
 				<button type="submit" className={style.menu} data-bs-toggle="offcanvas" data-bs-target="#nav_menu_offcanvas" aria-controls="nav_menu_offcanvas">
-					<img className={style.menuImg} src="../../assets/icons/fontawesome/solid/bars.svg" alt="menu" height={32} />
+					{/* <img className={style.menuImg} src="../../assets/icons/fontawesome/solid/bars.svg" alt="menu" height={32} /> */}
+					<i className="fa-solid fa-bars" />
 				</button>
 				<div className={style.logoContainer}>
 					<img src={robinLogo} alt="robin-logo" height="32" />

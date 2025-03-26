@@ -162,17 +162,16 @@ var ContactMe = function ContactMe() {
   }, h("h1", null, "Contactarme"), h("div", {
     className: _styles_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].contactMeContainer
   }, h("a", {
-    href: "https://linkedin.com/in/tnlgorobinlugo",
+    href: "https://linkedin.com/in/tnlgorobinlugo/",
     className: "".concat(_styles_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].contactMeItem, " text-decoration-none"),
-    target: "_blank",
-    rel: "noreferrer"
+    target: "_blank"
   }, h("i", {
     className: "fa-brands fa-linkedin"
   }), h("span", null, "LinkedIn")), h("a", {
     href: "mailto:lugoboero1999@gmail.com",
     className: "".concat(_styles_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].contactMeItem, " text-decoration-none"),
     target: "_blank",
-    rel: "noreferrer"
+    rel: "noopener noreferrer"
   }, h("i", {
     className: "fa-solid fa-at"
   }), h("span", null, "Correo Electr\xF3nico"))));

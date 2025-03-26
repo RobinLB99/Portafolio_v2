@@ -5,11 +5,11 @@ const ContactMe = () => {
         <div className={Style.contactMe} id="contact">
             <h1>Contactarme</h1>
             <div className={Style.contactMeContainer}>
+                {/* eslint-disable-next-line react/jsx-no-target-blank */}
                 <a
-                    href="https://linkedin.com/in/tnlgorobinlugo"
+                    href="https://linkedin.com/in/tnlgorobinlugo/"
                     className={`${Style.contactMeItem} text-decoration-none`}
                     target="_blank"
-                    rel="noreferrer"
                 >
                     {/* <img
                         src="../../assets/icons/fontawesome/brands/linkedin.svg"
@@ -22,7 +22,7 @@ const ContactMe = () => {
                     href="mailto:lugoboero1999@gmail.com"
                     className={`${Style.contactMeItem} text-decoration-none`}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                 >
                     {/* <img
                         src="../../assets/icons/fontawesome/solid/at.svg"

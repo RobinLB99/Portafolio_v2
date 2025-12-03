@@ -24,20 +24,6 @@ const Home = () => {
                             <i className="fa-brands fa-github" />
                             <span>Github</span>
                         </a>
-                        <a
-                            href="https://docs.google.com/document/d/1TykjHesgyH-2p8eJYwe0WRX-3WXGagCu/edit?usp=sharing&ouid=113282831848628091773&rtpof=true&sd=true"
-                            target="_blank"
-                            className={style.downloadLink}
-                            rel="noreferrer"
-                        >
-                            {/* <img
-                                src="../../assets/icons/fontawesome/solid/file.svg"
-                                alt="github-logo"
-                                height={25}
-                            /> */}
-                            <i className="fa-solid fa-file" />
-                            <span>CV</span>
-                        </a>
                     </div>
                 </div>
                 <div className={style.saludoLogo}>

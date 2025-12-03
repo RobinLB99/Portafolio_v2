@@ -112,14 +112,7 @@ var Home = function Home() {
     rel: "noreferrer"
   }, h("i", {
     className: "fa-brands fa-github"
-  }), h("span", null, "Github")), h("a", {
-    href: "https://docs.google.com/document/d/1TykjHesgyH-2p8eJYwe0WRX-3WXGagCu/edit?usp=sharing&ouid=113282831848628091773&rtpof=true&sd=true",
-    target: "_blank",
-    className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].downloadLink,
-    rel: "noreferrer"
-  }, h("i", {
-    className: "fa-solid fa-file"
-  }), h("span", null, "CV")))), h("div", {
+  }), h("span", null, "Github")))), h("div", {
     className: _style_css__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].saludoLogo
   }, h("img", {
     src: _assets_img_logo_robinlugo_logo_png__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"],
@@ -630,67 +623,67 @@ var app_App = function App() {
 
 var projects = [{
   id: 7,
-  title: 'ArchiveNest: Gestor Documental',
-  description: 'Software para la digitalización, organización, almacenamiento y búsqueda de documentos.',
-  image: 'https://placehold.co/600x400',
-  tecnologies: ['Java', 'Spring Boot', 'HTMX', 'Thymeleaf', 'MariaDB'],
+  title: "ArchiveNest: Gestor Documental",
+  description: "Software para la digitalización, organización, almacenamiento y búsqueda de documentos.",
+  image: "https://placehold.co/600x400",
+  tecnologies: ["Java", "Spring Boot", "HTMX", "Thymeleaf", "MariaDB"],
   url: null,
-  github: 'https://github.com/robinlb99/ArchiveNest/',
-  estado: 'En desarrollo'
+  github: "https://github.com/robinlb99/ArchiveNest/",
+  estado: "En desarrollo"
 }, {
   id: 6,
-  title: 'Portafolio v2',
-  description: 'Portafolio personal creado con Preact y Bootstrap.',
+  title: "Portafolio v2",
+  description: "Portafolio personal creado con Preact y Bootstrap.",
   image: portafolio_v2,
-  tecnologies: ['Preact', 'Bootstrap'],
+  tecnologies: ["Preact", "Bootstrap"],
   url: null,
-  github: 'https://github.com/robinlb99/Portafolio_v2/',
-  estado: 'Terminado'
+  github: "https://github.com/robinlb99/Portafolio_v2/",
+  estado: "Terminado"
 }, {
   id: 5,
-  title: 'TECHBIT',
-  description: 'Sistema de tickets de soporte Techbit para la gestion de incidencias y solicitudes de los usuarios.',
-  image: 'https://placehold.co/600x400',
-  tecnologies: ['JakartaEE', 'JSP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
+  title: "TECHBIT",
+  description: "Sistema de tickets de soporte Techbit para la gestion de incidencias y solicitudes de los usuarios.",
+  image: "https://i.imgur.com/QCFb24S.png",
+  tecnologies: ["JakartaEE", "JSP", "MySQL", "HTML", "CSS", "JavaScript"],
   url: null,
-  github: 'https://github.com/robinlb99/TECHBIT/',
-  estado: 'Terminado'
+  github: "https://github.com/robinlb99/TECHBIT/",
+  estado: "Terminado"
 }, {
   id: 4,
-  title: 'Software de Gestión de Liberia',
-  description: 'Software de gestión de librería con base de datos.',
+  title: "Software de Gestión de Liberia",
+  description: "Software de gestión de librería con base de datos.",
   image: libreria,
-  tecnologies: ['JavaEE', 'JSP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
+  tecnologies: ["JavaEE", "JSP", "MySQL", "HTML", "CSS", "JavaScript"],
   url: null,
-  github: 'https://github.com/robinlb99/Tienda_de_libros/',
-  estado: 'Terminado'
+  github: "https://github.com/robinlb99/Tienda_de_libros/",
+  estado: "Terminado"
 }, {
   id: 3,
-  title: 'Software de Gestión de Tienda',
-  description: 'Software de gestión de tienda con base de datos.',
+  title: "Software de Gestión de Tienda",
+  description: "Software de gestión de tienda con base de datos.",
   image: tienda,
-  tecnologies: ['Java', 'Java Swing', 'MySQL'],
+  tecnologies: ["Java", "Java Swing", "MySQL"],
   url: null,
-  github: 'https://github.com/robinlb99/Tienda/',
-  estado: 'Terminado'
+  github: "https://github.com/robinlb99/Tienda/",
+  estado: "Terminado"
 }, {
   id: 2,
-  title: 'Portafolio v1',
-  description: 'Primera version de mi Portafolio personal creado con HTML, CSS y JavaScript.',
+  title: "Portafolio v1",
+  description: "Primera version de mi Portafolio personal creado con HTML, CSS y JavaScript.",
   image: portafolio_v1,
-  tecnologies: ['HTML', 'CSS', 'JavaScript'],
-  url: 'https://robinlb99.github.io/Mi-portafolio/',
-  github: 'https://github.com/robinlb99/Mi-portafolio/',
-  estado: 'Terminado'
+  tecnologies: ["HTML", "CSS", "JavaScript"],
+  url: "https://robinlb99.github.io/Mi-portafolio/",
+  github: "https://github.com/robinlb99/Mi-portafolio/",
+  estado: "Terminado"
 }, {
   id: 1,
-  title: 'Calculadora',
-  description: 'Calculadora de operaciones matemáticas básicas.',
+  title: "Calculadora",
+  description: "Calculadora de operaciones matemáticas básicas.",
   image: calculadora,
-  tecnologies: ['HTML', 'CSS', 'JavaScript'],
-  url: 'https://robinlb99.github.io/Calculadora/',
-  github: 'https://github.com/robinlb99/Calculadora/',
-  estado: 'Terminado'
+  tecnologies: ["HTML", "CSS", "JavaScript"],
+  url: "https://robinlb99.github.io/Calculadora/",
+  github: "https://github.com/robinlb99/Calculadora/",
+  estado: "Terminado"
 }];
 /* harmony default export */ var proyectos = __webpack_exports__["a"] = (projects);
 

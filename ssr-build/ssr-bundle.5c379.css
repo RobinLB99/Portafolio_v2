@@ -638,6 +638,7 @@ body {
 .foto__IXyCK {
     width: calc(100% - 1.5rem);
     max-width: 450px;
+    height: -webkit-fit-content;
     height: fit-content;
     padding: 0;
     display: grid;
@@ -708,6 +709,7 @@ body {
 
 .tecnologies__eaNAO {
     width: 100%;
+    height: -webkit-fit-content;
     height: fit-content;
     padding: 3.5rem 0;
     display: grid;
@@ -718,6 +720,7 @@ body {
 
 .listTecnologies__4FMpM {
     width: 100%;
+    height: -webkit-fit-content;
     height: fit-content;
     padding: 1.5rem 0;
     display: -ms-flexbox;
@@ -1123,6 +1126,7 @@ body {
 
 .contactMe__URtPp h1 {
     width: 100%;
+    height: -webkit-fit-content;
     height: fit-content;
     text-align: center;
 }
@@ -1277,4 +1281,4 @@ body {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.b299e.css.map*/
+/*# sourceMappingURL=ssr-bundle.5c379.css.map*/
